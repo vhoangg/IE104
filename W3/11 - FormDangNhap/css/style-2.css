@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 100px auto;
+  width: 600px;
+  height: 300px;
+  border: 3px dotted red;
+  border-radius: 10px;
+  background-image: url(../images/login.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 250px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(173, 0, 0);
+  margin: 30px;
+}
+
+table {
+  margin: auto;
+  text-align: right;
+}
+
+td {
+  padding: 5px;
+}
+
+input {
+  border: 2px dotted red;
+  border-radius: 10px;
+  background-color: rgba(245, 63, 63, 0.418);
+  padding: 3px;
+}
+
+button {
+  padding: 5px;
+  display: block;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(199, 0, 0), red);
+  border-radius: 10px;
+}

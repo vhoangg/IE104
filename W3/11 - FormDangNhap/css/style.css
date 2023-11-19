@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  padding: 3px;
+  display: block;
+  margin: auto;
+}

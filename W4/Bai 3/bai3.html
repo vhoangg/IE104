@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0be3ece2e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>LIÊN HỆ</h1>
+
+        <div class="main">
+            <div class="info">
+                <h2>Thông tin</h2>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> Kp 6, P. Linh Trung, Tp. Thủ Đức, Tp. HCM
+                </p>
+                <p><i class="fa-regular fa-envelope"></i>
+                    info@uit.edu.vn</p>
+                <p><i class="fa-solid fa-phone"></i>
+                    +84 28 372 52020</p>
+            </div>
+
+            <div class="form">
+                <h2>Hãy liên lạc với chúng tôi bất cứ khi nào!!!</h2>
+                <form action="">
+                    <input type="text" id="name" placeholder="Họ và tên">
+                    <input type="text" id="email" placeholder="Địa chỉ e-mail">
+                    <input type="text" id="heading" placeholder="Tiêu đề bài viết">
+                    <textarea name="" id="detail" cols="30" rows="10" placeholder="Nội dung cần gửi"></textarea>
+                </form>
+                <button id="btn">GỬI TIN NHẮN <i class="fa-regular fa-circle-check"></i></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let heading = document.getElementById("heading").value;
+            let detail = document.getElementById("detail").value;
+
+            let result = "Họ và tên: " + name + "\n";
+            result += "E-mail: " + email + "\n";
+            result += "Tiêu đề: " + heading + "\n";
+            result += "Nội dung góp ý: \n";
+            result += detail + "\n";
+
+            alert(result);
+        });
+    </script>
+</body>
+
+</html>

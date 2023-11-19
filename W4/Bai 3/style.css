@@ -1,0 +1,45 @@
+.container {
+  width: 1200px;
+  margin: auto !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  color: blue !important;
+  border-bottom: 2px solid red;
+}
+
+.info {
+  width: 40%;
+}
+
+.info p {
+  opacity: 0.5;
+}
+
+.form {
+  width: 60%;
+}
+
+input,
+textarea {
+  width: 93%;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form h2 {
+  color: purple !important;
+}
+
+button {
+  color: white !important;
+  background-color: teal !important;
+  padding: 10px;
+  border: none;
+}

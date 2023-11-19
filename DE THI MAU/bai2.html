@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+        }
+
+        p {
+            color: aqua;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="clock"></p>
+    </div>
+
+    <script>
+        function format(number) {
+            return String(number).padStart(2, '0');
+        }
+
+        setInterval(function () {
+            let time = new Date();
+            let a = time.getHours() > 12 ? "AM" : "PM";
+            document.getElementById("clock").innerHTML = format(time.getHours() % 12) + ":" + format(time.getMinutes()) + ":" + format(time.getSeconds()) + "  " + a;
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TÍNH CHỈ SỐ BMI</h1>
+        <form action="">
+            Nhập cân nặng?
+            <input type="text" id="weight">
+
+            Nhập chiều cao?
+            <input type="text" class="red" id="height">
+
+            Chọn loại tuổi?
+            <select name="" id="age">
+                <option value="1">Trung niên</option>
+                <option value="2">Già, lớn tuổi</option>
+            </select>
+        </form>
+        <button id="btn"><b>TÍNH BMI</b></button>
+        <h2>KẾT QUẢ</h2>
+        <p id="BMI"></p>
+        <p id="result" class="red"></p>
+        <p id="tips" class="red"></p>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+            let object = {
+                w: parseFloat(document.getElementById("weight").value),
+                h: parseFloat(document.getElementById("height").value),
+                a: document.getElementById("age").value,
+
+                tinhBMI: function () {
+                    return this.w / Math.pow(this.h, 2);
+                },
+
+                phanLoai: function () {
+                    let x = this.tinhBMI();
+                    if (x < 18.5)
+                        return "Dưới chuẩn"
+                    else if (x < 25)
+                        return "Bình thường"
+                    else if (x < 30)
+                        return "Thừa cân"
+                    else if (x < 35)
+                        return "Béo phì cấp độ I"
+                    else if (x < 40)
+                        return "Béo phì cấp độ II"
+                    else
+                        return "Béo phì cấp độ III"
+                },
+
+                khuyenNghi: function () {
+                    let x = this.tinhBMI();
+                    if (x >= 40) {
+                        if (this.a == 2)
+                            return "Hạn chế ăn mỡ động vật"
+                    }
+                    else if (x >= 35 && x < 40) {
+                        if (this.a == 1 || this.a == 2)
+                            return "Tập thể dục thường xuyên"
+                    }
+                    else if (x >= 30 && x < 35) {
+                        if (this.a == 1)
+                            return "Khám định kỳ"
+                    }
+                    else
+                        return ""
+                }
+            }
+            document.getElementById("BMI").innerHTML = object.tinhBMI().toFixed(2);
+            document.getElementById("result").innerHTML = object.phanLoai();
+            document.getElementById("tips").innerHTML = object.khuyenNghi() ? object.khuyenNghi() : " ";
+
+        })
+    </script>
+</body>
+
+</html>

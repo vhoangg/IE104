@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>GIẢI PHƯƠNG TRÌNH BẬC I</h1>
+        <form action="">
+            <input type="text" id="a" placeholder="Hệ số a">
+            <input type="text" id="b" placeholder="Hệ số b">
+        </form>
+        <button id="btn">Giải phương trình</button>
+        <p>KẾT QUẢ</p>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        button = document.getElementById("btn");
+        button.addEventListener("click", function () {
+            let object = {
+                heSoA: parseInt(document.getElementById("a").value),
+                heSoB: parseInt(document.getElementById("b").value),
+                giaiPT: function () {
+                    if (this.heSoA == 0)
+                        if (this.heSoB == 0)
+                            return 'Phương trình vô số nghiệm';
+                        else
+                            return 'Phương trình vô nghiệm do hệ số a = 0';
+                    else
+                        return "Nghiệm x = " + (- this.heSoB / this.heSoA);
+                }
+            }
+            document.getElementById("result").innerHTML = object.giaiPT();
+        });
+    </script>
+</body>
+
+</html>

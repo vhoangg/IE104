@@ -1,0 +1,35 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.box {
+  padding: 15px;
+  border: 1px solid black;
+  width: 75px;
+}
+
+.products-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.product-info {
+  width: 33%;
+}
+
+.detail {
+  line-height: 1.6;
+}

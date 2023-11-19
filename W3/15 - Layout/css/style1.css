@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 130px;
+  background-image: url(../images/nen-hoa-co.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.header h1 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-shadow: 2px 2px 1px purple;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.side-bar {
+  width: 22%;
+}
+
+.side-bar img {
+  width: 100%;
+}
+
+.main {
+  width: 77%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>ĐĂNG KÝ DU LỊCH</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Họ tên</td>
+                    <td><input type="text" size="40"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td>Khách Việt Nam</td>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td>Chọn tour</td>
+                    <td>
+                        <select id="chontour" style="width:250px">
+                            <optgroup label="Miền Bắc">
+                                <option value="1" selected="selected">Hà Nội - Hạ Long - Sapa</option>
+                                <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                                <option value="5">Nha Trang - Đà Lạt</option>
+                                <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                                <option value="8">Phú Quốc - Côn Đảo</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phương tiện</td>
+                    <td>
+                        <input type="radio" name="pt">Máy bay
+                        <input type="radio" name="pt">Xe du lịch
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <fieldset style="width:400px; text-align:left; margin: auto;">
+                            <legend>Số lượng đoàn khách</legend>
+                            Người lớn <input id="nguoi_lon" type="text" size="10" maxlength="15" />
+                            Trẻ em <input id="tre_em" type="text" size="10" maxlength="15" />
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú thêm</td>
+                    <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Đồng ý</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span style="color: red; font-weight: bold; text-align: center; display: block;">Bạn
+                            đã đăng ký
+                            thành công!!!</span>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

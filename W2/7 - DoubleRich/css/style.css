@@ -1,0 +1,39 @@
+body {
+  background-color: darkred;
+  background-image: url(../images/nen-hoa-hong.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#table {
+  color: pink;
+  width: 1000px;
+  margin: 20px auto;
+}
+.HinhQua {
+  max-width: 300px;
+}
+.red {
+  color: red;
+}
+table {
+  border: 2px solid pink;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+thead {
+  background-color: pink !important;
+}
+li {
+  padding: 10px;
+}
+#img {
+  float: left;
+  width: 25%;
+}

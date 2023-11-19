@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <label for="id-input">Input:</label>
+    <input type="text" id="id-input" placeholder="Nhập thông tin...">
+    <div id="output"></div>
+    <script>
+        $(document).on("change", "#id-input", function () {
+            var value = $(this).val(); //Lấy giá trị hiện tại của phần tử HTML
+            $('#output').text('Output: ' + value);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.container {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: purple;
+}
+
+p {
+  color: grey;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+table {
+  margin: auto;
+  width: 800px;
+  background-color: rgba(197, 197, 197, 0.41);
+  box-shadow: 5px 5px 10px grey;
+}
+
+input,
+select,
+textarea {
+  margin: 0 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+}
+
+input {
+  width: 80%;
+}
+
+select {
+  width: 85%;
+}
+
+textarea {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px;
+  border: none;
+  margin: 30px;
+  display: block;
+}

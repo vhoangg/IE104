@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0be3ece2e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+        <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu <br>
+            Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm (nếu có).
+        </p>
+        <table>
+            <form action="">
+
+                <tr>
+                    <td>
+                        <input type="text" id="name" placeholder="Họ và tên">
+                    </td>
+                    <td>
+                        <input type="text" id="card_id" placeholder="Mã thẻ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" id="phone" placeholder="Số điện thoại">
+                    </td>
+                    <td>
+                        <input type="text" id="email" placeholder="E-mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="loaiKH">
+                            <option value="" selected hidden>Chọn loại khách hàng</option>
+                            <option value="Than thiet">Thân thiết</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="order_id" placeholder="Mã hoá đơn">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="" id="description" cols="30" rows="10"
+                            placeholder="Nhập chi tiết mô tả"></textarea>
+                    </td>
+                </tr>
+            </form>
+            <tr>
+                <td colspan="2">
+                    <button onclick="submit()">GỬI GÓP Ý <i class="fa-brands fa-facebook-messenger"></i></button>
+                </td>
+            </tr>
+        </table>
+
+
+        <script>
+            function submit() {
+                let name = document.getElementById("name").value;
+                let card_id = document.getElementById("card_id").value;
+                let description = document.getElementById("description").value;
+                let phone = document.getElementById("phone").value;
+                let email = document.getElementById("email").value;
+                let loaiKH = document.getElementById("loaiKH").value;
+                let order_id = document.getElementById("order_id").value;
+
+                let result = "Họ và tên: " + name + "\n";
+                result += "Mã thẻ: " + card_id + "\n";
+                result += "Số điện thoại: " + phone + "\n";
+                result += "E-mail: " + email + "\n";
+                result += "Loại KH: " + loaiKH + "\n";
+                result += "Mã HĐ: " + order_id + "\n";
+                result += "Nội dung góp ý: \n";
+                result += description + "\n";
+
+                alert(result);
+            }
+        </script>
+    </div>
+</body>
+
+</html>

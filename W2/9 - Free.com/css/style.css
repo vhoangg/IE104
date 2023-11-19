@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #395b9f;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+p {
+  color: #395b9f;
+  text-align: center;
+}
+a {
+  color: red !important;
+}
+
+.grid-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+}
